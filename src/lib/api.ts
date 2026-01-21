@@ -3,7 +3,9 @@
  * Handles communication with the serverless API routes
  */
 
-const API_BASE = import.meta.env.PROD ? '/api' : '/api';
+const API_BASE =
+  import.meta.env.VITE_API_BASE_URL || 'http://localhost:8000/api';
+
 
 export interface Session {
   session_id: string;
