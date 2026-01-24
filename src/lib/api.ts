@@ -72,6 +72,7 @@ export interface ChatResponse {
     content: string;
   };
   chartData?: ChartData | null;
+  modelUsed?: string;
   sessionContext?: {
     total_sessions: number;
     weakest_area: string;
